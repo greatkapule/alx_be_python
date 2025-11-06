@@ -1,10 +1,8 @@
-# basic_operations.py
-
-# Define the two required variables
+# Assign the required values to the variables
 number1 = 10
 number2 = 5
 
-# Calculate the results
+# Perform the arithmetic operations
 sum_result = number1 + number2
 difference_result = number1 - number2
 product_result = number1 * number2
