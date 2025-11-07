@@ -3,11 +3,11 @@ ANNUAL_RATE = 0.05  # 5% annual interest rate
 MONTHS_IN_YEAR = 12
 # 1. User Input (We use float() to handle potential decimal inputs)
 # Get monthly income and immediately convert it from string to float
-income = float(input("Enter your monthly income: "))
+monthly_income = float(input("Enter your monthly income: "))
 # Get monthly expenses and convert to float
-expenses = float(input("Enter your total monthly expenses: "))
+monthly_expenses = float(input("Enter your total monthly expenses: "))
 # --- 2. Calculate Monthly Savings ---
-monthly_savings = income - expenses
+monthly_savings = monthly_income - monthly_expenses
 # --- 3. Project Annual Savings (with interest) ---
 # Calculate savings over 12 months without interest
 annual_savings_base = monthly_savings * MONTHS_IN_YEAR
