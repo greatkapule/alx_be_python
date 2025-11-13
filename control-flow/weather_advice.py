@@ -1,23 +1,23 @@
 # weather_advice.py
 
-# 1. Prompt User for Weather Input and immediately normalize it
-# This line performs the prompt, removes any leading/trailing spaces, and converts to lowercase.
+# 1. Prompt User for Weather Input and normalize it
 weather = input("What's the weather like today? (sunny/rainy/cold): ").strip().lower()
 
 # 2. Provide Clothing Recommendations using if-elif-else
+# USE SINGLE QUOTES ('') FOR ALL OUTPUT STRINGS
 
 if weather == "sunny":
-    # Output must match exactly (Note the period)
-    print("Wear a t-shirt and sunglasses.")
+    # Changed from "..." to '...'
+    print('Wear a t-shirt and sunglasses.')
 
 elif weather == "rainy":
-    # Output must match exactly (Note the period)
-    print("Don't forget your umbrella and a raincoat.")
+    # Changed from "..." to '...'
+    print('Don\'t forget your umbrella and a raincoat.') # Note the escaped quote here
 
 elif weather == "cold":
-    # Output must match exactly (Note the period)
-    print("Make sure to wear a warm coat and a scarf.")
+    # Changed from "..." to '...'
+    print('Make sure to wear a warm coat and a scarf.')
 
 else:
-    # Output must match exactly (Note the period)
-    print("Sorry, I don't have recommendations for this weather.")
+    # Changed from "..." to '...'
+    print('Sorry, I don\'t have recommendations for this weather.')
