@@ -1,5 +1,5 @@
-
-def perform_operation(num1: float, num2: float, operation: str):
+def perform_operation(num1, num2, operation):
+    
     if operation == 'add':
         return num1 + num2
     
@@ -13,6 +13,4 @@ def perform_operation(num1: float, num2: float, operation: str):
         if num2 == 0:
             return "Error: Cannot divide by zero"
         return num1 / num2
-        
-    else:
-        return f"Error: Invalid operation '{operation}'. Must be 'add', 'subtract', 'multiply', or 'divide'."
+    return None
