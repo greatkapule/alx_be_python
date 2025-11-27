@@ -3,15 +3,15 @@ from bank_account import BankAccount
 
 def main():
     account = BankAccount(100.00) 
-    
+
     if len(sys.argv) < 2:
-        print("Usage: python main.py <command>:<amount>")
+        print("Usage: python main-0.py <command>:<amount>")
         print("Commands: deposit, withdraw, display")
         sys.exit(1)
 
     try:
         command, *params = sys.argv[1].split(':')
-        command = command.lower() 
+        command = command.lower()
         
         amount = float(params[0]) if params else None
 
