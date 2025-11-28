@@ -25,7 +25,7 @@ class TestSimpleCalculator(unittest.TestCase):
             (3, 5, -2),
             (0, 0, 0),
             (2.5, 0.5, 2.0),
-            (-1, -1, 0),
+            (5, -2, 7),
             (10**6, 1, 10**6 - 1),
         ]
         for a, b, expected in cases:
@@ -56,6 +56,9 @@ class TestSimpleCalculator(unittest.TestCase):
         for a, b, expected in cases:
             with self.subTest(a=a, b=b):
                 self.assertEqual(self.calc.divide(a, b), expected)
+        
+        self.assertAlmostEqual(self.calc.divide(10, 3), 3.3333333333333335)
+
 
     def test_division_by_zero(self):
         self.assertIsNone(self.calc.divide(10, 0))
