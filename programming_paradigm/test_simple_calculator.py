@@ -62,7 +62,7 @@ class TestSimpleCalculator(unittest.TestCase):
 
     def test_division_by_zero(self):
         self.assertIsNone(self.calc.divide(10, 0))
-        self.assertIsNone(self.calc.divide(0, 0))
+        self.assertIsNone(self.calc.divide(0, 0)) 
         self.assertIsNone(self.calc.divide(-5, 0))
 
     def test_non_numeric_inputs_raise(self):
